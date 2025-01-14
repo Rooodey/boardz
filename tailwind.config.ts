@@ -8,11 +8,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-nunito-sans)", "Arial", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: '#EC7520',
+          dark: '#EC7520',
+        },
+        secondary: {
+          DEFAULT: '#075561',
+          dark: '#95c2c9',
+        },
       },
     },
   },
   plugins: [],
+  darkMode: 'selector',
 } satisfies Config;
